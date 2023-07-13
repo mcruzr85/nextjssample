@@ -1,5 +1,11 @@
+/*aqui val los estilos globales de la app, lo que se aplica a todas las paginas*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html, body{
+  background-color: #1B2838;
+  color: white;
 }
