@@ -1,14 +1,17 @@
 import { BsCart4 } from "react-icons/bs";
-
+import Logo from "@/components/logo/Logo";
+import Input from "@/components/form/input/Input";
 
 import styles from "./Navbar.module.css";
-import Logo from "../logo/Logo";
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-   <Logo/>
-      <input />
+      <Logo />
+      <div className={styles.searchcontainer}>
+      <Input  type="text" placeholder="Buscar" fullWidth/>
+      </div>
+      
       <BsCart4 size={40} />
     </nav>
   );

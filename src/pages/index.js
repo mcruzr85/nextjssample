@@ -6,6 +6,7 @@ import Head from "next/head";
 import styles from "@/styles/index.module.css";
 import GameCard from "@/components/Card/gameCard/GameCard";
 
+
 export default function Home() {
   return (
     <>
@@ -33,7 +34,9 @@ export default function Home() {
 
           <div className={styles.session}>
             <Subtitle>Outros Jogos</Subtitle>
-            <div>
+            <div className={styles.gamecontainer}>
+              <GameCard />
+              <GameCard />
               <GameCard />
             </div>
           </div>
