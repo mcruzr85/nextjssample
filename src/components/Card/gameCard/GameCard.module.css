@@ -3,6 +3,8 @@
     display: flex;  
 }
 
+
+
 .info{
     padding: 20px;   
     display: flex;
@@ -12,7 +14,8 @@
 .title{
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 700;    
+    font-weight: 700;  
+    min-width: max-content ;
 }
 
 .category{
@@ -31,4 +34,29 @@
 .price{
     color: #BEEB14;
     font-size: 32px;
+}
+
+@media (max-width:768px) {
+
+    .image{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .gamecard{
+        flex-direction: column;
+        
+    }
+    .title{
+        min-width: auto ;
+    }
+
+    .pricecontainer{
+        flex-direction: column;
+    }
+
+    .price{
+        padding: 6px 0;
+    }
+
 }

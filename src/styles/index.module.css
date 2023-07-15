@@ -5,8 +5,9 @@
 .salecontainer{
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;   
+    gap: 20px;    
 }
 
 .gamecontainer{
@@ -17,3 +18,14 @@
     gap: 20px;
 }
 
+@media (min-width: 850px){
+    .salecontainer{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 850px){
+.gamecontainer{
+    align-items: center;
+}
+
+}
