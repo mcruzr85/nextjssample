@@ -1,5 +1,4 @@
-.salesbutton{
-    width: 100%;
+.salesbutton{    
     padding: 15px 5px;
     border-radius: 10px;
     background-color: #549300;
@@ -10,6 +9,10 @@
     color: white;
     cursor: pointer;
    
+}
+
+.fullWidth{
+    width: 100%;
 }
 
 .salesbutton:hover{
