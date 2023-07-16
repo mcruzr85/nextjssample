@@ -1,7 +1,9 @@
 import { BsCart4 } from "react-icons/bs";
 import Logo from "@/components/logo/Logo";
 import Input from "@/components/form/input/Input";
-
+import CardButton from "@/components/form/cardButton/CardButton";
+//API do OpenWeatherMap
+//https://miro.com/app/board/o9J_l10llhU=/
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -9,10 +11,10 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <Logo />
       <div className={styles.searchcontainer}>
-      <Input  type="text" placeholder="Buscar" fullWidth/>
+        <Input type="text" placeholder="Buscar" fullWidth />
       </div>
-      
-      <BsCart4 size={40} />
+
+      <CardButton />
     </nav>
   );
 }

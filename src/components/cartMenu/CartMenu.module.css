@@ -1,0 +1,35 @@
+.menu{
+    background: #364A63;
+    width: 300px;
+    border: solid 1px cadetblue;
+    position: absolute;
+    right: 60px;
+    padding: 20px;
+    z-index: 10;
+
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 20px;    
+}
+.priceline{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    font-size: 12px;
+}
+.price{
+    color: #BEEB14;
+}
+
+@media (max-width:500px){
+    .menu{
+        width: 250px;
+        right: 20px;
+
+    }
+
+}

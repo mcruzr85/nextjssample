@@ -6,7 +6,6 @@ import Head from "next/head";
 import styles from "@/styles/index.module.css";
 import GameCard from "@/components/Card/gameCard/GameCard";
 
-
 export default function Home() {
   return (
     <>
@@ -26,9 +25,24 @@ export default function Home() {
           <div className={styles.session}>
             <Subtitle>Promoções</Subtitle>
             <div className={styles.salecontainer}>
-              <SaleCard />
-              <SaleCard />
-              <SaleCard />
+              <SaleCard
+                image={"league-of-legends.jpg"}
+                discount={25}
+                fullPrice={100}
+                price={75}
+              />
+              <SaleCard
+                image={"dota-2.jpg"}
+                discount={30}
+                fullPrice={150}
+                price={100}
+              />
+              <SaleCard
+                image={"valorant.jpg"}
+                discount={10}
+                fullPrice={200}
+                price={180}
+              />
             </div>
           </div>
 
