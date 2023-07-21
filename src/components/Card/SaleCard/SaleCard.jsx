@@ -3,10 +3,15 @@ import Button from "@/components/form/button/Button";
 import { getName } from "@/utils/utils";
 import styles from "./SaleCard.module.css";
 
-export default function SaleCard({ image, discount, fullPrice, price }) {
+export default function SaleCard({ image, discount, fullPrice, price, onAdd }) {
   return (
     <div className={styles.salecard}>
-      <Image src={`/products/${image}`} alt={getName(image)} width={250} height={300} />
+      <Image
+        src={`/products/${image}`}
+        alt={getName(image)}
+        width={250}
+        height={300}
+      />
       <div className={styles.info}>
         <h3 className={styles.title}>Oferta Exclusiva</h3>
         <div className={styles.pricecard}>
@@ -16,7 +21,9 @@ export default function SaleCard({ image, discount, fullPrice, price }) {
             <h4 className={styles.discountedprice}>{`R$${price}`}</h4>
           </div>
         </div>
-        <Button fullWidth={true}>Adicionar ao carrinho</Button>
+        <Button fullWidth={true} onClick={onAdd}>
+          Adicionar ao carrinho
+        </Button>
       </div>
     </div>
   );

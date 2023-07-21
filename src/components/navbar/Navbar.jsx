@@ -4,6 +4,10 @@ import Input from "@/components/form/input/Input";
 import CardButton from "@/components/form/cardButton/CardButton";
 //API do OpenWeatherMap
 //https://miro.com/app/board/o9J_l10llhU=/
+//librerias manejo de estado
+//recoil
+//zustand
+//swr(para next) hace el gerenciamiento de estado directamente llamando desde la api
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -13,7 +17,6 @@ export default function Navbar() {
       <div className={styles.searchcontainer}>
         <Input type="text" placeholder="Buscar" fullWidth />
       </div>
-
       <CardButton />
     </nav>
   );
