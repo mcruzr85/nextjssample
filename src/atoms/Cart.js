@@ -1,6 +1,6 @@
 import { atom } from "recoil"; //esto es como el store
 
-export const carState = atom({
+export const cartState = atom({
     key: 'cartState',
     default: [],
 });

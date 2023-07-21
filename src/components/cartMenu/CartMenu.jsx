@@ -1,14 +1,13 @@
 import { useRecoilState } from "recoil";
 
-import { carState } from "@/atoms/Cart";
-
+import { cartState } from "@/atoms/Cart";
 import CartOption from "@/components/cartOption/CartOption";
 import Button from "@/components/form/button/Button";
 
 import styles from "./CartMenu.module.css";
 
 export default function CartMenu() {
-  const [cart, setCart] = useRecoilState(carState);
+  const [cart, setCart] = useRecoilState(cartState);
 
   const handleRemoveProduct = (pos) => {
     setCart(cart.filter((e, index) => index !== pos));

@@ -12,7 +12,7 @@ export default function CartOption({ image, price, onRemove }) {
         width={62}
         height={74}
       />
-      <div className={styles.info}></div>
+      <div className={styles.info}>
         <h3 className={styles.title}>{getName(image)}</h3>
         <h3 className={styles.price}>{`R$${price}`}</h3>
         <p className={styles.remover} onClick={onRemove}>

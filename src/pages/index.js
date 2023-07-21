@@ -6,12 +6,12 @@ import Container from "@/components/container/Container";
 import Navbar from "@/components/navbar/Navbar";
 import Subtitle from "@/components/tipography/subtitle/Subtitle";
 import GameCard from "@/components/Card/gameCard/GameCard";
-import { carState } from "@/atoms/Cart";
+import { cartState } from "@/atoms/Cart";
 
 import styles from "@/styles/index.module.css";
 
 export default function Home() {
-  const [cart, setCart] = useRecoilState(carState);
+  const [cart, setCart] = useRecoilState(cartState);
 
   const handleAddProduct = (product) => {
     setCart([...cart, product]);
